@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>display Month</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                margin-left:4em;
+                margin-right: 4em;
+                font-family: verdana;
+
+            }
+            header{
+                padding-top: 15px;
+                padding-left: 1em;
+                background-color: darkred;
+                text-align: left;
+                color: white;
+                height: 50px;
+
+            }
+            form{
+                width: 80%;
+                margin: auto;
+                margin-top: 2em;
+            }
+            legend{
+                padding-left:2em;
+                padding-right: 2em;
+                text-align: center;
+				margin:auto;
+                background: purple;
+                color: white;
+            }
+            fieldset{
+                text-align: center;
+                border: 2px solid purple;
+                height: 200px;
+                line-height: 50px;
+            }
+            input[type=number] {
+                width: 4em;
+            }
+            input[type=submit] {
+                color: white;
+                padding: 5px; 
+                background:purple; 
+                border:0 none;
+                cursor:pointer;
+                -webkit-border-radius: 5px;
+                border-radius: 5px; 
+            }
+
+            
+        </style>
+
+    </head>
+    <body>
+        <header>Month/Year Calculator</header>
+        <form action="calculate.php" method="POST">
+            <fieldset>
+                <legend>Enter Month-Year</legend>
+                Year: <input type="number" name="year" required><br>
+                Month:<input type="number" min="1" max="12" name="month" required><br>
+                <input type="submit" value="Get Monthly Calendar ">
+            </fieldset>
+        </form>
+
+    </body>
+</html>
